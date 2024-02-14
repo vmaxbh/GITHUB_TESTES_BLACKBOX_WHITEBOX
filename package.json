@@ -4,7 +4,11 @@
   "description": "Exemplos de testes automatizados de caixa preta e caixa branca com Cypress, Jest e Supertest",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run && npx jest",
+    "cypress": "cypress run",
+    "cypress:login": "npx cypress run --spec cypress/e2e/login.cy.js",
+    "cypress:repository": "npx cypress run --spec cypress/e2e/repository.cy.js",
+    "jest": "npx jest"
   },
   "keywords": [],
   "author": "Maxwell Viana QA",
@@ -17,5 +21,13 @@
     "mochawesome-report-generator": "^6.2.0",
     "moment": "^2.29.4",
     "supertest": "^6.3.4"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "jest-html-reporters": "^3.1.7"
+  },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "Node"
   }
 }

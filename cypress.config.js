@@ -5,7 +5,7 @@ const dateTime = moment().format('DD-MM-YYYY_HH-mm-ss');
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://example.cypress.io',
+    baseUrl: 'https://github.com/',
     video: true,
   },
   reporter: "mochawesome",
