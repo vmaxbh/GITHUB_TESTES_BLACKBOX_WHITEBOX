@@ -21,7 +21,7 @@ jobs:
           CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
-          command: npm run Cypress  
+          command: npm run cypress  
   cypress-tests-Modelo-Whitebox:
     runs-on: ubuntu-22.04
     steps:
