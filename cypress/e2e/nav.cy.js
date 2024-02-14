@@ -4,7 +4,7 @@ describe('Cenário Navegação Sidebar ', () => {
         cy.wait(2)
     });
 
-    it('Perfil', () => {
+    it.only('Perfil', () => {
         cy.navSidebarProfile()
         cy.wait(1)
         cy.navRepository()

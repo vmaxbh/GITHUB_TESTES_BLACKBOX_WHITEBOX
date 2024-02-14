@@ -1,7 +1,7 @@
 Cypress.Commands.add('navSidebarProfile', () => {
     cy.get('.Button-label > .avatar').click().log('Botão Sidebar clicado com Sucesso!')
     cy.wait(3)
-    cy.contains('span[data-view-component="true"].ActionListItem-label', 'Your profile').click().log('Campo PErfil Clicado com Sucesso!');
+    cy.get('span[data-view-component="true"].ActionListItem-label').contains('Your profile').click();
     cy.wait(3)
     cy.get('.AppHeader-context-item-label').should('exist').log('Componente de tela de Perfil confirmado com Sucesso!')
 });
