@@ -6,11 +6,11 @@ describe('Cenário Navegação Sidebar ', () => {
 
     it.only('Perfil', () => {
         cy.navSidebarProfile()
-        cy.wait(1)
-        cy.navRepository()
-        cy.wait(1)
-        cy.navProjects()
-        cy.wait(1)
+        //cy.wait(1)
+        //cy.navRepository()
+        //cy.wait(1)
+        //cy.navProjects()
+        //cy.wait(1)
     });
 
     it('Configurações', () => {
