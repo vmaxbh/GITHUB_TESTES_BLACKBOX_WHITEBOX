@@ -12,8 +12,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install modules
-        run: npm install
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version:  14
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Google Chrome
+        run: sudo apt-get update && sudo apt-get install -y google-chrome-stable
       - name: Run end-to-end black box tests 🧪
         uses: cypress-io/github-action@v5
         env:
@@ -21,15 +27,24 @@ jobs:
           CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
-          command: npm run cypress  
+          command: npm run cypress
+          browser: chrome
+
   cypress-tests-Modelo-Whitebox:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install modules
-        run: npm install
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version:  14
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Google Chrome
+        run: sudo apt-get update && sudo apt-get install -y google-chrome-stable
       - name: Run white box tests 🧪
         uses: cypress-io/github-action@v5
         with:
-          command: npm run jest      
+          command: npm run jest
+          browser: chrome
