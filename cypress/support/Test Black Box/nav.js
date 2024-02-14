@@ -1,5 +1,5 @@
 Cypress.Commands.add('navSidebarProfile', () => {
-    cy.get('button[aria-label="Open global navigation menu"]').should('be.visible').click();
+    cy.get('button[aria-label="Open global navigation menu"]').click();
     cy.contains('Issues').should('be.visible').click()
     //cy.get('.Button-label > .avatar').should('be.visible').click().log('Botão Sidebar clicado com Sucesso!')
     //cy.wait(3)
