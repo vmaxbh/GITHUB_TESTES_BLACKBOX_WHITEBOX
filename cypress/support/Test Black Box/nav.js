@@ -1,5 +1,5 @@
 Cypress.Commands.add('repTylerAufderharPrivateTrue', () => {
-    cy.get('[data-target="loading-context.details"] > .Details > .js-repos-container > .list-style-none > :nth-child(1) > .width-full > .wb-break-word > .color-fg-default').click()
+    cy.get('[data-target="loading-context.details"] > .Details > .js-repos-container > .list-style-none > :nth-child(1) > .width-full > .wb-break-word > .color-fg-default').should('be.visible').click()
     cy.get('#settings-tab').click()
     cy.get(':nth-child(1) > .flex-auto > .mb-0').should('contain', 'This repository is currently private.')
     

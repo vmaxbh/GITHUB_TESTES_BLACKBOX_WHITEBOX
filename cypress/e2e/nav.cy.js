@@ -1,7 +1,7 @@
 describe('Cenário Navegação Sidebar ', () => {
     beforeEach(() => {
         cy.login()
-        cy.wait(2)
+        
     });
 
     it.only('Validações Repositório repTyler-Aufderhar ', () => {
