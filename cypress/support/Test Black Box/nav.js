@@ -1,11 +1,8 @@
-Cypress.Commands.add('navSidebarProfile', () => {
-    cy.get('button[aria-label="Open global navigation menu"]').click();
-    //cy.contains('Issues').should('be.visible').click()
-    //cy.get('.Button-label > .avatar').should('be.visible').click().log('Botão Sidebar clicado com Sucesso!')
-    //cy.wait(3)
-    //cy.get('span[data-view-component="true"].ActionListItem-label').contains('Your profile').should('be.visible').click();
-    //cy.wait(3)
-   // cy.get('.AppHeader-context-item-label').should('exist').log('Componente de tela de Perfil confirmado com Sucesso!')
+Cypress.Commands.add('repTylerAufderharPrivateTrue', () => {
+    cy.get('[data-target="loading-context.details"] > .Details > .js-repos-container > .list-style-none > :nth-child(1) > .width-full > .wb-break-word > .color-fg-default').click()
+    cy.get('#settings-tab').click()
+    cy.get(':nth-child(1) > .flex-auto > .mb-0').should('contain', 'This repository is currently private.')
+    
 });
 
 Cypress.Commands.add('navRepository', () => {

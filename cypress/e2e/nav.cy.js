@@ -4,13 +4,9 @@ describe('Cenário Navegação Sidebar ', () => {
         cy.wait(2)
     });
 
-    it.only('Perfil', () => {
-        cy.navSidebarProfile()
-        //cy.wait(1)
-        //cy.navRepository()
-        //cy.wait(1)
-        //cy.navProjects()
-        //cy.wait(1)
+    it.only('Validações Repositório repTyler-Aufderhar ', () => {
+        cy.repTylerAufderharPrivateTrue()
+        
     });
 
     it('Configurações', () => {
