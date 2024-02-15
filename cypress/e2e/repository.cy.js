@@ -3,12 +3,14 @@ describe('Cenário Repositório ', () => {
         cy.login()
     });
 
-    it('Criando Repositório', () => {
+    it('Confirmando campos internos da área de criação de Repositórios', () => {
         cy.createRepository()
-        cy.ConfirmFieldsCreate()
         
     });
 
-  
+    it('Confirmando campos cabeçalho área de criação de Repositórios', () => {
+        cy.ConfirmHeaderCreate()
+        
+    });
     
 });
