@@ -32,7 +32,7 @@ jobs:
             ${{ runner.os }}-npm-
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       # Etapa para execução de testes de caixa preta com Cypress
       - name: Cypress end-to-end tests
