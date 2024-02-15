@@ -4,6 +4,7 @@ const moment = require('moment');
 const dateTime = moment().format('DD-MM-YYYY_HH-mm-ss');
 
 module.exports = defineConfig({
+  chromeWebSecurity: false,
   e2e: {
     baseUrl: 'https://github.com/',
     video: true,
