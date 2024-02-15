@@ -26,7 +26,6 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
           command: npm run cypress
-        if: matrix.os == 'ubuntu-latest' && matrix.browser == 'chrome'
   cypress-tests-Modelo-Whitebox:
     runs-on: ubuntu-22.04
     steps:
