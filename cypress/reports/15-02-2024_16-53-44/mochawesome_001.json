@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-15T19:54:29.159Z",
+    "end": "2024-02-15T19:54:44.418Z",
+    "duration": 15259,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "320607a3-759a-4cc0-ab85-88cbf7c96054",
+      "title": "",
+      "fullFile": "cypress\\e2e\\repository.cy.js",
+      "file": "cypress\\e2e\\repository.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bab7b9cd-7041-41fc-b137-816f0a72bd08",
+          "title": "Cenário Repositório ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirmando campos internos da área de criação de Repositórios",
+              "fullTitle": "Cenário Repositório  Confirmando campos internos da área de criação de Repositórios",
+              "timedOut": null,
+              "duration": 9474,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRepository();",
+              "err": {},
+              "uuid": "267db6bf-f483-4c92-b454-3af43222e9a9",
+              "parentUUID": "bab7b9cd-7041-41fc-b137-816f0a72bd08",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirmando campos cabeçalho área de criação de Repositórios",
+              "fullTitle": "Cenário Repositório  Confirmando campos cabeçalho área de criação de Repositórios",
+              "timedOut": null,
+              "duration": 5463,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.ConfirmHeaderCreate();",
+              "err": {},
+              "uuid": "58b63c9d-9a4c-447b-986e-8d9820c79fd2",
+              "parentUUID": "bab7b9cd-7041-41fc-b137-816f0a72bd08",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "267db6bf-f483-4c92-b454-3af43222e9a9",
+            "58b63c9d-9a4c-447b-986e-8d9820c79fd2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14937,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/15-02-2024_16-53-44",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
