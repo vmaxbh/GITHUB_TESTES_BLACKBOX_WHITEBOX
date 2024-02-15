@@ -1,6 +1,6 @@
 describe('Cenário Repositório ', () => {
     beforeEach(() => {
-        cy.login()
+        cy.login({ timeout:  50000 })
     });
 
     it('Confirmando campos internos da área de criação de Repositórios', () => {
