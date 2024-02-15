@@ -25,7 +25,12 @@ jobs:
           CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
-          command: npm run cypress
+          command: npm run cypress:run
+      - name: Upload Cypress videos
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-videos
+          path: cypress/videos/*.mp4
   cypress-tests-Modelo-Whitebox:
     runs-on: ubuntu-22.04
     steps:

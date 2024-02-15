@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-13T02:46:31.289Z",
+    "end": "2024-02-13T02:46:49.925Z",
+    "duration": 18636,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3826bd89-f305-4d05-9630-31f72e1e5da0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "17cb3c16-a3f0-41d2-bbf0-0c2c63668c45",
+          "title": "Cenário Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fluxos de Login",
+              "fullTitle": "Cenário Login Fluxos de Login",
+              "timedOut": null,
+              "duration": 7323,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login();",
+              "err": {},
+              "uuid": "5aada091-7ba6-4c2e-9c05-14a9739141a3",
+              "parentUUID": "17cb3c16-a3f0-41d2-bbf0-0c2c63668c45",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login Caminho Feliz",
+              "fullTitle": "Cenário Login Login Caminho Feliz",
+              "timedOut": null,
+              "duration": 4865,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginCaminhoFeliz();",
+              "err": {},
+              "uuid": "836466d0-2ec7-47c1-9b25-4c5bef450789",
+              "parentUUID": "17cb3c16-a3f0-41d2-bbf0-0c2c63668c45",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login Usuário Inválido",
+              "fullTitle": "Cenário Login Login Usuário Inválido",
+              "timedOut": null,
+              "duration": 2914,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginUsuárioInválido();",
+              "err": {},
+              "uuid": "62bad17a-f71e-448c-a6ac-e0f38c633446",
+              "parentUUID": "17cb3c16-a3f0-41d2-bbf0-0c2c63668c45",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login Senha Inválida",
+              "fullTitle": "Cenário Login Login Senha Inválida",
+              "timedOut": null,
+              "duration": 3268,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginSenhaInvalida();",
+              "err": {},
+              "uuid": "5d3d0ea7-6697-4bb1-8fce-fffb1751444e",
+              "parentUUID": "17cb3c16-a3f0-41d2-bbf0-0c2c63668c45",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5aada091-7ba6-4c2e-9c05-14a9739141a3",
+            "836466d0-2ec7-47c1-9b25-4c5bef450789",
+            "62bad17a-f71e-448c-a6ac-e0f38c633446",
+            "5d3d0ea7-6697-4bb1-8fce-fffb1751444e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18370,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/12-02-2024_23-46-06",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

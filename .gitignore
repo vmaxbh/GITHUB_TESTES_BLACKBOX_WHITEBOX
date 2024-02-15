@@ -1,6 +1,4 @@
 .DS_Store
 cypress.env.json
 cypress/downloads/
-cypress/screenshots/
-cypress/reports/
 node_modules/

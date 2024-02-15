@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-13T02:46:57.707Z",
+    "end": "2024-02-13T02:47:39.124Z",
+    "duration": 41417,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "af082dda-b363-493d-99dd-ef9c3af6f449",
+      "title": "",
+      "fullFile": "cypress\\e2e\\nav.cy.js",
+      "file": "cypress\\e2e\\nav.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "201f02b9-3011-41bd-80dd-53aa71e4f343",
+          "title": "Cenário Navegação Sidebar ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perfil",
+              "fullTitle": "Cenário Navegação Sidebar  Perfil",
+              "timedOut": null,
+              "duration": 10315,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.navSidebarProfile();\ncy.navRepository();\ncy.navProjects();",
+              "err": {},
+              "uuid": "47d915d3-2b4f-4178-ae57-c15d1f41430b",
+              "parentUUID": "201f02b9-3011-41bd-80dd-53aa71e4f343",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Configurações",
+              "fullTitle": "Cenário Navegação Sidebar  Configurações",
+              "timedOut": null,
+              "duration": 8422,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.navSettings();\ncy.navSettingsEmail();",
+              "err": {},
+              "uuid": "0e1a80bc-1840-4e88-86f7-720e385684c2",
+              "parentUUID": "201f02b9-3011-41bd-80dd-53aa71e4f343",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Github Suporte",
+              "fullTitle": "Cenário Navegação Sidebar  Github Suporte",
+              "timedOut": null,
+              "duration": 8426,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.navGithubSuport();",
+              "err": {},
+              "uuid": "41d9a209-6d9e-4827-8a2e-71d7c7b745d6",
+              "parentUUID": "201f02b9-3011-41bd-80dd-53aa71e4f343",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Github Docs",
+              "fullTitle": "Cenário Navegação Sidebar  Github Docs",
+              "timedOut": null,
+              "duration": 6416,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.navGithubDocs();",
+              "err": {},
+              "uuid": "540f0c9a-e143-4295-9da1-9f6d4cf0e7d4",
+              "parentUUID": "201f02b9-3011-41bd-80dd-53aa71e4f343",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Your Stars",
+              "fullTitle": "Cenário Navegação Sidebar  Your Stars",
+              "timedOut": null,
+              "duration": 7088,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.navYourStars();",
+              "err": {},
+              "uuid": "e236ddab-359f-4966-8f21-23b6d56d348c",
+              "parentUUID": "201f02b9-3011-41bd-80dd-53aa71e4f343",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "47d915d3-2b4f-4178-ae57-c15d1f41430b",
+            "0e1a80bc-1840-4e88-86f7-720e385684c2",
+            "41d9a209-6d9e-4827-8a2e-71d7c7b745d6",
+            "540f0c9a-e143-4295-9da1-9f6d4cf0e7d4",
+            "e236ddab-359f-4966-8f21-23b6d56d348c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 40667,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/12-02-2024_23-46-06",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

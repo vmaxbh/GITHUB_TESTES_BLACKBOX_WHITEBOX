@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-13T02:47:46.703Z",
+    "end": "2024-02-13T02:47:56.279Z",
+    "duration": 9576,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c1bd843f-9936-41cd-97f5-2d0455f0d560",
+      "title": "",
+      "fullFile": "cypress\\e2e\\repository.cy.js",
+      "file": "cypress\\e2e\\repository.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f193a10-a7f1-4751-81d0-48e566b3d66d",
+          "title": "Cenário Repositório ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Criando Repositório",
+              "fullTitle": "Cenário Repositório  Criando Repositório",
+              "timedOut": null,
+              "duration": 9373,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRepository();\ncy.ConfirmFieldsCreate();",
+              "err": {},
+              "uuid": "f5c8fdf8-6e71-4a90-8903-4d5637ec8097",
+              "parentUUID": "7f193a10-a7f1-4751-81d0-48e566b3d66d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f5c8fdf8-6e71-4a90-8903-4d5637ec8097"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9373,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/12-02-2024_23-46-06",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
