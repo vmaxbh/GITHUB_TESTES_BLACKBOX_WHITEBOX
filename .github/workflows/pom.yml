@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: cypress-videos
-          path: cypress/videos/*.mp4
+          path: cypress/Artefacts/*.mp4
   cypress-tests-Modelo-Whitebox:
     runs-on: ubuntu-22.04
     steps:
