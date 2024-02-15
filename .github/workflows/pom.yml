@@ -7,29 +7,52 @@ on:
   pull_request:
 
 jobs:
-  cypress-tests-Modelo-Blackbox:
-    runs-on: ubuntu-22.04
+  testes:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        browser: [chrome, firefox] # Se estiver usando Cypress para testes de front-end
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install modules
-        run: npm install
-      - name: Run end-to-end black box tests 🧪
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Etapa para execução de testes de caixa preta com Cypress
+      - name: Cypress end-to-end tests
+        if: matrix.os == 'ubuntu-latest' && matrix.browser == 'chrome'
         uses: cypress-io/github-action@v5
         env:
           CYPRESS_USERNAME: ${{ secrets.CYPRESS_USERNAME }}
           CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
-          command: npm run cypress  
-  cypress-tests-Modelo-Whitebox:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install modules
-        run: npm install
-      - name: Run white box tests 🧪
-        uses: cypress-io/github-action@v5
-        with:
-          command: npm run jest      
+          command: npm run cypress
+
+      # Etapa para execução de testes de caixa branca com Jest
+      - name: Jest white-box tests
+        if: matrix.os == 'ubuntu-latest'
+        run: npm run jest
+
+      # Etapa para gerar relatório de cobertura de código
+      - name: Coverage report
+        if: matrix.os == 'ubuntu-latest'
+        run: npm run coverage-report
+
+      # Outras etapas, como análise estática de código, integração com ferramentas externas, implantação, etc.
