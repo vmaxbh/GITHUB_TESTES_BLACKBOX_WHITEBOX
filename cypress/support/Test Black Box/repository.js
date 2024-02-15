@@ -9,7 +9,7 @@ const randomFullName = `${randomFirstName}_${randomLastName}`
 
 
 Cypress.Commands.add('createRepository', () => {
-    cy.get('[data-target="loading-context.details"] > .Details > .js-repos-container > .f4 > .Button--primary > .Button-content').should('be.visible').click()
+    cy.iframe('[data-target="loading-context.details"] > .Details > .js-repos-container > .f4 > .Button--primary > .Button-content').should('be.visible').click()
     cy.get('.Heading__StyledHeading-sc-1c1dgg0-0').should('exist').log('Área de criação de repositório acessada com Sucesso!')
     cy.get('.enACkX > :nth-child(3) > ._VisuallyHidden__VisuallyHidden-sc-11jhm7a-0').should('exist').log('Campo de Description Confirmado na Interface!')
     cy.get(':nth-child(1) > .hZnBBv > ._VisuallyHidden__VisuallyHidden-sc-11jhm7a-0').should('exist').log('Flag de repositorio publico identificado na tela!')
