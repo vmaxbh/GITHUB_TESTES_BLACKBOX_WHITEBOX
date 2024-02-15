@@ -6,9 +6,9 @@ const randomName = faker.person.fullName();
 
 
 Cypress.Commands.add('createRepository', () => {
-    cy.get('#repository\\[name\\]').type(randomName).log('Nome Aleatório gerado pelo Faker inserido no campo com Sucesso!');
-    cy.get(':nth-child(2) > .flex-self-start').click().log('Botão para gerar repositório clicado com sucesso!');
-    cy.get(':nth-child(2) > .AppHeader-context-item > .AppHeader-context-item-label').should('exist').log('Componente de Interface com nome de repositírio gerado confirmado a existencia na interface!');
+    cy.get('#repository\\[name\\]').type(randomName).log('Nome Aleatório gerado pelo Faker inserido no campo com Sucesso!')
+    cy.get(':nth-child(2) > .flex-self-start').click().log('Botão para gerar repositório clicado com sucesso!')
+    cy.get(':nth-child(2) > .AppHeader-context-item > .AppHeader-context-item-label').should('exist').log('Componente de Interface com nome de repositírio gerado confirmado a existencia na interface!')
 });
 
 Cypress.Commands.add('ConfirmFieldsCreate', () => {
