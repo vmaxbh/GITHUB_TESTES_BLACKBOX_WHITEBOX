@@ -5,7 +5,8 @@ Cypress.Commands.add('login', (username = 'USERNAME', password = 'PASSWORD', ret
         cy.get('#login_field').should('be.visible').type(Cypress.env(username)).should('have.value', Cypress.env(username)).log('Usuário incluído no campo de username!');
         cy.get('#password').should('be.visible').type(Cypress.env(password)).should('have.value', Cypress.env(password)).log('Senha incluída no campo de password!');
         cy.get('.position-relative > .btn').click().log('Botão de acessar clicado!');
-        
+        cy.wait(10)
+        cy.get('.AppHeader-context-item-label', { timeout: 10000 }).should('contain', 'Dashboard')
     };
 
     const checkLoginSuccess = () => {
