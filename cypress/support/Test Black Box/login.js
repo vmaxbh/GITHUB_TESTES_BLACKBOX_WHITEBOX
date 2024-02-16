@@ -5,7 +5,7 @@ Cypress.Commands.add('login', (username = 'USERNAME', password = 'PASSWORD') => 
     cy.get('#password').should('be.visible').type(Cypress.env(password)).should('have.value', Cypress.env(password)).log('Senha incluída no campo de password!');
     cy.get('.position-relative > .btn').click().log('Botão de acessar clicado!');
     cy.wait(5000); // Aumente o tempo de espera para   1000ms para dar tempo suficiente para a página processar
-    cy.get('.AppHeader-context-item-label', { timeout:   10000 }).should('contain', 'Dashboard');
+    cy.get('.AppHeader-context-item-label').should('contain', 'Dashboard');
 });
 
 Cypress.Commands.add('loginUsuárioInválido', (username = 'USERNAME', password = 'PASSWORD') => {
