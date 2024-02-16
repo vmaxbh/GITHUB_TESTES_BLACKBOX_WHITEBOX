@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-16T12:49:54.220Z",
+    "end": "2024-02-16T12:50:22.855Z",
+    "duration": 28635,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b5f7f776-5636-4ff8-940b-d63f9bd23ee6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\repository.cy.js",
+      "file": "cypress\\e2e\\repository.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa45e1d5-def3-4878-bdc4-14517fbc883e",
+          "title": "Cenário Repositório ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirmando campos internos da área de criação de Repositórios",
+              "fullTitle": "Cenário Repositório  Confirmando campos internos da área de criação de Repositórios",
+              "timedOut": null,
+              "duration": 17163,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRepository();",
+              "err": {},
+              "uuid": "d4bd7626-2302-4af3-88a3-d3a050adcd8b",
+              "parentUUID": "fa45e1d5-def3-4878-bdc4-14517fbc883e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirmando campos cabeçalho área de criação de Repositórios",
+              "fullTitle": "Cenário Repositório  Confirmando campos cabeçalho área de criação de Repositórios",
+              "timedOut": null,
+              "duration": 10886,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.ConfirmHeaderCreate();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-target=\"loading-context.details\"] > .Details > .js-repos-container > .f4 > .Button--primary > .Button-content`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-target=\"loading-context.details\"] > .Details > .js-repos-container > .f4 > .Button--primary > .Button-content`, but never found it.\n    at Context.eval (webpack://yes/./cypress/support/Test Black Box/repository.js:25:130)",
+                "diff": null
+              },
+              "uuid": "b9e7aa58-a721-410e-9b43-48d63647c373",
+              "parentUUID": "fa45e1d5-def3-4878-bdc4-14517fbc883e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d4bd7626-2302-4af3-88a3-d3a050adcd8b"
+          ],
+          "failures": [
+            "b9e7aa58-a721-410e-9b43-48d63647c373"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 28049,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/16-02-2024_09-48-30",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
