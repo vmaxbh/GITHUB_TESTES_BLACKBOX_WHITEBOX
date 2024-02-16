@@ -2,8 +2,8 @@ Cypress.Commands.add('login', (username = 'USERNAME', password = 'PASSWORD', ret
     const login = () => {
         cy.visit('/').log('URL acessada!');
         cy.get('div.width-lg-auto > :nth-child(2) > .d-inline-block').click().log('Botão para acesso à página de Login clicado!');
-        cy.get('#login_field').should('be.visible').type(Cypress.env(username)).log('Usuário incluído no campo de username!');
-        cy.get('#password').should('be.visible').type(Cypress.env(password)).log('Senha incluída no campo de password!');
+        cy.get('#login_field').should('be.visible').type(Cypress.env(username)).should('have.value', Cypress.env(username)).log('Usuário incluído no campo de username!');
+        cy.get('#password').should('be.visible').type(Cypress.env(password)).should('have.value', Cypress.env(password)).log('Senha incluída no campo de password!');
         cy.get('.position-relative > .btn').click().log('Botão de acessar clicado!');
         cy.get('.AppHeader-context-item-label').should('contain', 'Dashboard')
     };
