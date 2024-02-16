@@ -1,6 +1,6 @@
 describe('Cenário Login', () => {
       
-  it('Fluxos de Login', () => {
+  it.only('Fluxos de Login', () => {
     cy.login()
     
   });
